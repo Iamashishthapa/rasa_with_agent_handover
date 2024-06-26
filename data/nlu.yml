@@ -1,0 +1,95 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: choose_department
+  examples: |
+    - [IT & Security]{"entity":"department", "role":"IT & Security"}
+    - I want to talk to [IT & Security]{"entity":"department", "role":"IT & Security"}
+    - [Project Manager]{"entity":"department", "role":"Project Manager"}
+    - I need to speak with a [Project Manager]{"entity":"department", "role":"Project Manager"}
+    - [Technical Support]{"entity":"department", "role":"Technical Support"}
+    - Connect me to [Technical Support]{"entity":"department", "role":"Technical Support"}
+    - I need help from the [Technical Support department]{"entity":"department", "role":"Technical Support"}
+    - I need to talk to [IT & Security]{"entity":"department", "role":"IT & Security"} support
+    - Can you connect me with [IT & Security]{"entity":"department", "role":"IT & Security"}?
+    - Please transfer me to the [IT & Security]{"entity":"department", "role":"IT & Security"} department
+    - I need assistance from [IT & Security]{"entity":"department", "role":"IT & Security"} department
+    - Could you put me through to [IT & Security]{"entity":"department", "role":"IT & Security"}?
+    - I would like to talk to a [Project Manager]{"entity":"department", "role":"Project Manager"}
+    - Can you put me in touch with a [Project Manager]{"entity":"department", "role":"Project Manager"}?
+    - Please transfer me to the [Project Manager]{"entity":"department", "role":"Project Manager"} department
+    - I need to speak with someone in [Project Manager]{"entity":"department", "role":"Project Manager"}
+    - Get me in touch with a [Project Manager]{"entity":"department", "role":"Project Manager"} please
+    - Connect me to the [Technical Support]{"entity":"department", "role":"Technical Support"} team
+    - I need to talk to someone in [Technical Support]{"entity":"department", "role":"Technical Support"}
+    - Can you transfer me to the [Technical Support]{"entity":"department", "role":"Technical Support"} department?
+    - I need help from [Technical Support]{"entity":"department", "role":"Technical Support"}
+    - Please connect me to the [Technical Support]{"entity":"department", "role":"Technical Support"} department
+    - Could you put me through to [Technical Support]{"entity":"department", "role":"Technical Support"}?
+    - [IT & Security]{"entity":"department", "role":"IT & Security"} team, please
+    - I have an issue for the [IT & Security]{"entity":"department", "role":"IT & Security"} department
+    - Help me with [IT & Security]{"entity":"department", "role":"IT & Security"} related problem
+    - I want to speak with a [Project Manager]{"entity":"department", "role":"Project Manager"} right now
+    - I need a [Project Manager]{"entity":"department", "role":"Project Manager"} to assist me
+    - Contact a [Project Manager]{"entity":"department", "role":"Project Manager"} for me
+    - Direct me to the [Technical Support]{"entity":"department", "role":"Technical Support"} department
+    - Can you connect me to [Technical Support]{"entity":"department", "role":"Technical Support"}?
+    - Help me find someone in [Technical Support]{"entity":"department", "role":"Technical Support"}
+    - Connect me with [Technical Support]{"entity":"department", "role":"Technical Support"} department
+    - I need to resolve an issue with the [Technical Support]{"entity":"department", "role":"Technical Support"} department
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

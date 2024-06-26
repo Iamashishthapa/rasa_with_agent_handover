@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - choose_department
+  - bot_challenge
+
+entities:
+  - department
+
+slots:
+  department:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: department
+
+responses:
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot."
+
+  utter_greet:
+    - text: "Welcome to Aligned Customer Support."
+
+  utter_ask_department:
+    - text: "Who would you like to talk to from the Support team:"
+
+  utter_assign_it:
+    - text: "Someone from the IT department will be with you shortly, estimate waiting time is 30 minutes."
+
+  utter_assign_project_manager:
+    - text: "Someone from the Project Management department will be with you shortly, estimate waiting time is 20 minutes."
+
+  utter_assign_accounting:
+    - text: "Someone from the Accounting department will be with you shortly, estimate waiting time is 25 minutes."
+
+  utter_thank_you:
+    - text: "You're welcome! If you need further assistance, feel free to ask."
+
+actions:
+  - action_greet
+  - action_assign_department
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,54 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-department",
+      "2": "I-department",
+      "3": "L-department",
+      "4": "U-department",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-department": 1,
+      "I-department": 2,
+      "L-department": 3,
+      "U-department": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  },
+  {
+    "tag_name": "role",
+    "ids_to_tags": {
+      "1": "B-Accounting",
+      "2": "I-Accounting",
+      "3": "L-Accounting",
+      "4": "U-Accounting",
+      "5": "B-IT",
+      "6": "I-IT",
+      "7": "L-IT",
+      "8": "U-IT",
+      "9": "B-Project Manager",
+      "10": "I-Project Manager",
+      "11": "L-Project Manager",
+      "12": "U-Project Manager",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-Accounting": 1,
+      "I-Accounting": 2,
+      "L-Accounting": 3,
+      "U-Accounting": 4,
+      "B-IT": 5,
+      "I-IT": 6,
+      "L-IT": 7,
+      "U-IT": 8,
+      "B-Project Manager": 9,
+      "I-Project Manager": 10,
+      "L-Project Manager": 11,
+      "U-Project Manager": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

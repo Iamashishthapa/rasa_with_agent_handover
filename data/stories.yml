@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+
+- story: greet and choose department
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: choose_department
+  - action: action_assign_department
+
+# - story: thank you
+#   steps:
+#   - intent: thank_you
+#   - action: utter_thank_you
